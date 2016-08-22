@@ -37,11 +37,10 @@
             $count=$a[$j]/60;
             $count=intval($count);
             $remain=$a[$j]%60;
-            if($remain!=0)
-            {
-                $QQ[$count][$remain]='M';
 
-            }
+            $QQ[$count][$remain]='M';
+
+
 
         }
 
