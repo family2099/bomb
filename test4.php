@@ -115,9 +115,7 @@ else
 
                 if($num!=$QQ[$i][$j])
                 {
-                    echo $num;
-                    echo $QQ[$i][$j];
-                    echo  $i.$j;
+
                     echo "不符合,因為炸彈數量不對";
                     $torf=0;
                     break 2;
