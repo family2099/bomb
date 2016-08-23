@@ -2,7 +2,7 @@
 header("Content-Type:text/html; charset=utf-8");
 $str=$_GET['map'];
 $str1=str_replace('N',"",$str);
-// var_dump($str1);
+// echo $str1;
 // exit;
 $strMnum=substr_count($str,'M');
 
@@ -32,7 +32,7 @@ else if(empty($str))
     echo "不符合,因為是空值<br>";
     $torf=0;
 }
-else if(isset($str))
+else if(!isset($str))
 {
     echo "不符合,因為變數不存在<br>";
     $torf=0;
