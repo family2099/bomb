@@ -1,7 +1,9 @@
 <?php
 header("Content-Type:text/html; charset=utf-8");
 $str=$_GET['map'];
-
+$str1=str_replace('N',"",$str);
+// var_dump($str1);
+// exit;
 $strMnum=substr_count($str,'M');
 
 $strNnum=substr_count($str,'N');
@@ -9,8 +11,11 @@ $strNnum=substr_count($str,'N');
 $torf=1;
 
 $mapStr=str_split($str);
-
+$mapStr1=str_split($str1);
 $strNum=count($mapStr);
+
+
+
 
 if($strNum<109 || $strNum>109)
 {
@@ -51,7 +56,7 @@ else
     {
         for($j=0;$j<10;$j++) {
 
-            $QQ[$i][$j]=$mapStr[$q];
+            $QQ[$i][$j]=$mapStr1[$q];
             $q++;
         }
 
